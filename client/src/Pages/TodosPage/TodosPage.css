@@ -1,0 +1,93 @@
+.todos-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212; 
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .todos-card-horizontal {
+    position: relative;
+    animation: slideIn 1s ease-out;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .todos-card-horizontal .MuiCardContent-root {
+    padding: 20px;
+  }
+  
+  .todos-card-horizontal .MuiCardHeader-root {
+    margin-bottom: 20px;
+  }
+  
+  .todos-card-header {
+    color: #ffcc00;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .todos-card-subheader {
+    color: #b88a45; 
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  
+  .todos-card-horizontal:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .MuiButton-root {
+    background-color: #b88a45;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .MuiButton-root:hover {
+    background-color: #ffcc00;
+    transform: translateY(-3px);
+  }
+  
+  .todos-page-container:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .CreateTodo {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .TodosHeader {
+    margin-top: 15px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  

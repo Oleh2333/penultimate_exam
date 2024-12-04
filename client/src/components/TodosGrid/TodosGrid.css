@@ -1,0 +1,50 @@
+.div1{
+    background-color: rgb(225, 156, 66);
+    margin: 20px;
+    padding: 10px 35px;
+}
+.completed{
+    text-decoration: line-through;
+}
+
+.completed {
+    position: relative;
+    display: inline-block;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px; 
+    text-decoration-color: #d32f2f; 
+    color: #888; 
+  }
+  
+  .completed::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #d32f2f; 
+    transform: rotate(2deg); 
+  }
+  
+.remove-button {
+    padding: 6px 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+    color: #e99de8;
+    border: 2px solid #FFD700; 
+    background-color: #FFD700; 
+  }
+  
+  .remove-button:hover {
+    background-color: #FFB300; 
+    border-color: #FFB300;
+    color: #ada4a4;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #808080;
+  }
+  
